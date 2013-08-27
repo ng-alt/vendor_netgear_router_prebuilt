@@ -156,12 +156,12 @@ function checkData()
 	    var ap_netmask = (cf.WMask1.value<< 24) | (cf.WMask2.value<< 16) | (cf.WMask3.value<< 8)| (cf.WMask4.value);
         
         if (cf.device_name.value == "")
-		msg+= "<%870%>\n";
+		msg+= "<%871%>\n";
 
     	if (cf.device_name.value.match( /[^\x20-\x7E]/ ))
     	{
     		cf.device_name.focus();
-    		msg+= "<%871%>\n";
+    		msg+= "<%872%>\n";
     	}
     
     	if(!cf.APIpAssign.checked)
@@ -177,7 +177,7 @@ function checkData()
     			cf.WPethr4.value = parseInt(cf.WPethr4.value,10);
     		}
     		if(checkIP(cf.WMask1,cf.WMask2,cf.WMask3,cf.WMask4,255))
-    			msg+= "<%406%>";
+    			msg+= "<%407%>";
     		else
     		{
     			cf.WMask1.value = parseInt(cf.WMask1.value,10);
@@ -187,7 +187,7 @@ function checkData()
     		}
     		if(checkIP(cf.WGateway1,cf.WGateway2,cf.WGateway3,cf.WGateway4,255)
     		    ||checkIPMatchWithNetmask(cf.WMask1,cf.WMask2,cf.WMask3,cf.WMask4,cf.WGateway1,cf.WGateway2,cf.WGateway3,cf.WGateway4))
-    			msg+= "<%407%>";
+    			msg+= "<%408%>";
     		else
     		{
     			cf.WGateway1.value = parseInt(cf.WGateway1.value,10);
@@ -201,14 +201,14 @@ function checkData()
     		var tmpgwip = cf.WGateway1.value+'.'+cf.WGateway2.value+'.'+cf.WGateway3.value+'.'+cf.WGateway4.value;
     		if((ap_ipaddr&ap_netmask) != (ap_gateway&ap_netmask))
     		{
-    			alert("<%408%>" + tmpip + "<%409%>" + tmpgwip);
+    			alert("<%409%>" + tmpip + "<%410%>" + tmpgwip);
     			return false;
     		}
     	}
     	if(!cf.APDnsAssign.checked)
     	{
     		if(checkIP(cf.DAddr1,cf.DAddr2,cf.DAddr3,cf.DAddr4,254)||(parseInt(cf.DAddr4.value,10)==0))
-    			msg+= "<%410%>";
+    			msg+= "<%411%>";
     		else
     		{
     			cf.DAddr1.value = parseInt(cf.DAddr1.value,10);
@@ -219,7 +219,7 @@ function checkData()
     		if(cf.PDAddr1.value.length>0 || cf.PDAddr2.value.length>0 || cf.PDAddr3.value.length>0 || cf.PDAddr4.value.length>0)
     		{
     			if(checkIP(cf.PDAddr1,cf.PDAddr2,cf.PDAddr3,cf.PDAddr4,254)||(parseInt(cf.PDAddr4.value,10)==0))
-    				msg+= "<%411%>";
+    				msg+= "<%412%>";
     			else
     			{
     				cf.PDAddr1.value = parseInt(cf.PDAddr1.value,10);
@@ -237,15 +237,15 @@ function checkData()
     	cf.apmode_dns1_pri.value = cf.DAddr1.value+'.'+cf.DAddr2.value+'.'+cf.DAddr3.value+'.'+cf.DAddr4.value;
     	cf.apmode_dns1_sec.value = cf.PDAddr1.value+'.'+cf.PDAddr2.value+'.'+cf.PDAddr3.value+'.'+cf.PDAddr4.value;
         
-        if(<%361%>=="0")
-            alert("<%873%>");
+        if(<%364%>=="0")
+            alert("<%874%>");
 	}
 	else
 	{
         ap_mode_ungrayout(); 
         
-        if(<%361%>=="1")
-            alert("<%873%>");        
+        if(<%364%>=="1")
+            alert("<%874%>");        
 	}
 	if (msg.length > 1)
 	{
@@ -328,8 +328,8 @@ function check_wifi_sche()
         enableButton3=document.getElementsByName("del_sche");
         
         enableButton1[0].outerHTML='<button type="submit" value="<%1304%>" name="add_sche" class="button-rule" onclick="buttonClick(this,\'<%1304%>\');" ><span class="roundleft_button"><span class="add-icon">&nbsp;&nbsp;&nbsp;&nbsp;<%1304%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
-        enableButton2[0].outerHTML='<button type="submit" value="<%559%>" name="edit_sche" class="button-rule" onclick="buttonClick(this,\'<%559%>\');" ><span class="roundleft_button"><span class="edit-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%559%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
-        enableButton3[0].outerHTML='<button type="submit" value="<%560%>" name="del_sche" class="button-rule" onclick="buttonClick(this,\'<%560%>\');" ><span class="roundleft_button"><span class="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;  <%560%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
+        enableButton2[0].outerHTML='<button type="submit" value="<%560%>" name="edit_sche" class="button-rule" onclick="buttonClick(this,\'<%560%>\');" ><span class="roundleft_button"><span class="edit-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%560%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
+        enableButton3[0].outerHTML='<button type="submit" value="<%561%>" name="del_sche" class="button-rule" onclick="buttonClick(this,\'<%561%>\');" ><span class="roundleft_button"><span class="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;  <%561%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
                  
         enableButton1[0].style.cursor='default';        
         enableButton2[0].style.cursor='default';         
@@ -351,8 +351,8 @@ function check_wifi_sche()
         diableButton3=document.getElementsByName("del_sche");
         
         diableButton1[0].outerHTML='<button type="submit" value="<%1304%>" name="add_sche" class="button-grey" onclick="" ><span class="roundleft_grey"><span class="add-icon">&nbsp;&nbsp;&nbsp;&nbsp;<%1304%></span></span><span class="roundright_grey">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
-        diableButton2[0].outerHTML='<button type="submit" value="<%559%>" name="edit_sche" class="button-grey" onclick="" ><span class="roundleft_grey"><span class="edit-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%559%></span></span><span class="roundright_grey">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
-        diableButton3[0].outerHTML='<button type="submit" value="<%560%>" name="del_sche" class="button-grey" onclick="" ><span class="roundleft_grey"><span class="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;  <%560%></span></span><span class="roundright_grey">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
+        diableButton2[0].outerHTML='<button type="submit" value="<%560%>" name="edit_sche" class="button-grey" onclick="" ><span class="roundleft_grey"><span class="edit-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%560%></span></span><span class="roundright_grey">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
+        diableButton3[0].outerHTML='<button type="submit" value="<%561%>" name="del_sche" class="button-grey" onclick="" ><span class="roundleft_grey"><span class="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;  <%561%></span></span><span class="roundright_grey">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>';
                  
         diableButton1[0].style.cursor='default';        
         diableButton2[0].style.cursor='default';         
@@ -363,7 +363,7 @@ function showWpsAlert()
 {
     var cf = document.forms[0];
     if(cf.show_wps_alert.value == "1")
-        alert("<%56%>");
+        alert("<%58%>");
 }
 
 function display_apmode()
@@ -418,8 +418,8 @@ function setDNS()
 
 <tr align="left" valign="middle">
 <td  style="padding-top:10px;padding-bottom:10px" align="center" colspan="2" class="table-seperate-border">
-&nbsp;&nbsp;&nbsp;<button value="<%58%>"  onclick="buttonClick(this,'<%58%>');return checkData();" type="submit" name="Apply" class="button-apply" > <span class="roundleft_apply" ><%59%>&nbsp;<span class="apply-icon">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="roundright_apply">&nbsp;&nbsp;&nbsp;</span></button>
-&nbsp;&nbsp;&nbsp;<button value="<%60%>" onclick="buttonClick(this,'<%60%>');reset();loadSettings();" type="button" name="Cancel" class="button-rule" ><span class="roundleft_button"><span class ="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;<%61%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+&nbsp;&nbsp;&nbsp;<button value="<%60%>"  onclick="buttonClick(this,'<%60%>');return checkData();" type="submit" name="Apply" class="button-apply" > <span class="roundleft_apply" ><%61%>&nbsp;<span class="apply-icon">&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="roundright_apply">&nbsp;&nbsp;&nbsp;</span></button>
+&nbsp;&nbsp;&nbsp;<button value="<%62%>" onclick="buttonClick(this,'<%62%>');reset();loadSettings();" type="button" name="Cancel" class="button-rule" ><span class="roundleft_button"><span class ="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;<%63%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
 </td>
 </tr>
 
@@ -446,7 +446,7 @@ function setDNS()
 <tr>
   <td colspan="2">
     <div id="wifi_sche_div1">
-    <input type="checkbox"  <%1318%> name="wifi_onoff" value="wifi_onoff"> <%769%> 
+    <input type="checkbox"  <%1318%> name="wifi_onoff" value="wifi_onoff"> <%770%> 
     </div>
   </td>
 </tr>
@@ -475,8 +475,8 @@ function setDNS()
   <td colspan="2" align="center">
     <div id="wifi_sche_div4">
       &nbsp;&nbsp;&nbsp;<button type="submit" value="<%1304%>" name="add_sche" class="button-rule" onclick="buttonClick(this,'<%1304%>');" ><span class="roundleft_button"><span class="add-icon">&nbsp;&nbsp;&nbsp;&nbsp;<%1304%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
-      &nbsp;&nbsp;&nbsp;<button type="submit" value="<%559%>" name="edit_sche" class="button-rule" onclick="buttonClick(this,'<%559%>');" ><span class="roundleft_button"><span class="edit-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%559%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
-      &nbsp;&nbsp;&nbsp;<button type="submit" value="<%560%>" name="del_sche" class="button-rule" onclick="buttonClick(this,'<%560%>');" ><span class="roundleft_button"><span class="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;  <%560%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+      &nbsp;&nbsp;&nbsp;<button type="submit" value="<%560%>" name="edit_sche" class="button-rule" onclick="buttonClick(this,'<%560%>');" ><span class="roundleft_button"><span class="edit-icon">&nbsp;&nbsp;&nbsp;&nbsp; <%560%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
+      &nbsp;&nbsp;&nbsp;<button type="submit" value="<%561%>" name="del_sche" class="button-rule" onclick="buttonClick(this,'<%561%>');" ><span class="roundleft_button"><span class="cancel-icon">&nbsp;&nbsp;&nbsp;&nbsp;  <%561%></span></span><span class="roundright_button">&nbsp;&nbsp;&nbsp;&nbsp;</span></button>
     </div>
   </td>
 </tr>
@@ -529,8 +529,8 @@ function setDNS()
     <div id="apmode_display" style="display: none;">
     <table align="left" border="0" width="100%">
     <tr>
-    	<td nowrap><%614%></td>
-        <td width="60%" align="right"><INPUT TYPE="text" MAXLENGTH="12" SIZE="24" NAME="device_name" value="<%875%>"></td>
+    	<td nowrap><%615%></td>
+        <td width="60%" align="right"><INPUT TYPE="text" MAXLENGTH="12" SIZE="24" NAME="device_name" value="<%876%>"></td>
     </tr>
     <tr>
       <td colspan=2>
@@ -539,15 +539,15 @@ function setDNS()
       </td>
     </tr>
     <tr>
-    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%421%></td>
+    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%422%></td>
     	<td nowrap align="right" class="num"><input type="text" name="WPethr1" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,1)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WPethr2" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)" >.<input type="text" name="WPethr3" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WPethr4" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,1)"></td>
     </tr>
     <tr>
-    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%422%></td>
+    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%423%></td>
     	<td align="right" class="num"><input type="text" name="WMask1" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,1)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WMask2" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WMask3" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WMask4" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,1)"></td>
     </tr>
     <tr>
-    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%423%></td>
+    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%424%></td>
     	<td align="right" class="num"><input type="text" name="WGateway1" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,1)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WGateway2" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WGateway3" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="WGateway4" class="num" size="4" maxlength="3" onFocus="if(DisableFixedIP) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,1)"></td>
     </tr>
     <tr>
@@ -557,11 +557,11 @@ function setDNS()
       </td>
     </tr>
     <tr>
-    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%427%></td>
+    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%428%></td>
     	<td nowrap align="right" class="num"><input type="text" name="DAddr1" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,1)" onkeyup="jumpcheck(this,0)">.<input type="text" name="DAddr2" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="DAddr3" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="DAddr4" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,1)"></td>
     </tr>
     <tr>
-    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%428%></td>
+    	<td nowrap><img src="spacer.gif" width="20" height="12" border="0"><%429%></td>
     	<td nowrap align="right" class="num"><input type="text" name="PDAddr1" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,1)" onkeyup="jumpcheck(this,0)">.<input type="text" name="PDAddr2" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="PDAddr3" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,0)">.<input type="text" name="PDAddr4" class="num" size="4" maxlength="3" onFocus="if(DisableFixedDNS) this.blur()" onkeydown="bscheck(event,this,0)" onkeyup="jumpcheck(this,1)"></td>
     </tr>
     </table>
@@ -584,28 +584,28 @@ function setDNS()
    <img class="subfooter-image" src="img/subhead2-bottom.gif">
 <div class="subhead2-bottom" >
     <span style="float:left;padding-left:10px;padding-top:5px"><img src="img/help-icon.gif" onmouseover="changeCursorPointer();" onclick="showHelpIframe();" onmouseout="changeCursorDefault();"></span>
-    <span class="subhead2-text" style="float:left;padding-left:3px;" onclick="showHelpIframe();" onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();"> <%223%> </span>
+    <span class="subhead2-text" style="float:left;padding-left:3px;" onclick="showHelpIframe();" onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();"> <%225%> </span>
     <span class="button-help-arrow">
       <img src="img/helparrowdown-icon.gif" id="help-button" onclick="showHelpIframe();" onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();" ></span>
-    <span class="subhead2-text" style="text-decoration:underline;float:right;padding-right:10px" onclick="showHelpIframe();" onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();"> <%224%> </span>
+    <span class="subhead2-text" style="text-decoration:underline;float:right;padding-right:10px" onclick="showHelpIframe();" onmouseover="changeCursorPointer();" onmouseout="changeCursorDefault();"> <%226%> </span>
       </div>
 
 
 
 <input type="hidden" name="wps_enable" value="<%1347%>">
-<input type="hidden" name="show_wps_alert" value="<%229%>">
-<input type="hidden" name="wifi_2g_state" value="<%1204%>">
+<input type="hidden" name="show_wps_alert" value="<%231%>">
+<input type="hidden" name="wifi_2g_state" value="<%1206%>">
 <input type="hidden" name="wifi_2g_sche" value="<%1348%>">
 <input type="hidden" name="wifi_2g_sche_onoff" value="">
 <input type="hidden" name="wifi_2g_sche_num" value="<%1349%>">
 <input type="hidden" name="ntp_synced_flag" value="<%1350%>">
 <input type="hidden" name="select_2g_sche" value="-1">
-<INPUT name=apmode_ipaddr type=hidden value= "<%1104%>">
-<INPUT name=apmode_netmask type=hidden value= "<%1105%>">
-<INPUT name=apmode_gateway type=hidden value= "<%1107%>">
+<INPUT name=apmode_ipaddr type=hidden value= "<%1105%>">
+<INPUT name=apmode_netmask type=hidden value= "<%1106%>">
+<INPUT name=apmode_gateway type=hidden value= "<%1108%>">
 <INPUT name=apmode_dns_sel type=hidden value= "<%1351%>">
-<INPUT name=apmode_dns1_pri type=hidden value= "<%1112%>">
-<INPUT name=apmode_dns1_sec type=hidden value= "<%1113%>">
+<INPUT name=apmode_dns1_pri type=hidden value= "<%1113%>">
+<INPUT name=apmode_dns1_sec type=hidden value= "<%1114%>">
 <a name="helpframe-anchor"></a>
 </form>
 </div>

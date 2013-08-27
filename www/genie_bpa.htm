@@ -21,12 +21,12 @@ function checkData()
 	var cf = document.forms[0];
 	var msg = "";
 
-	msg+= checkBlank(cf.bpa_username, "<%451%>");
+	msg+= checkBlank(cf.bpa_username, "<%452%>");
 	msg+= checkBlank(cf.bpa_server, "<%1272%>");
 	if(cf.bpa_idletime.value.length<=0)
-	 msg+= "<%449%>";
-	else if(!_isNumeric(cf.bpa_idletime.value))
 	 msg+= "<%450%>";
+	else if(!_isNumeric(cf.bpa_idletime.value))
+	 msg+= "<%451%>";
 	if (msg.length > 1)
 	{
 		alert(msg);
@@ -91,7 +91,7 @@ function checkData()
 </tr>
 </table>
 <form name="formname" method="POST" action="genie_bpa.cgi"> 
-<input type="hidden" name="runtest" value="<%433%>">
+<input type="hidden" name="runtest" value="<%434%>">
 </form>
 </body>
 </html>
