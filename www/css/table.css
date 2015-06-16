@@ -687,3 +687,9 @@ iframe{
 {
 	border-right: inset 1pt;
 }
+
+.select-gray
+{
+     color:black;
+	 background: #E0E0E0;
+}
