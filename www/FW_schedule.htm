@@ -295,7 +295,7 @@ function checkSchedule()
 		  ||isNumeric(cf.startminute,59) || isNumeric(cf.endminute,59)) 
 		  && ( cf.endhour.value != 24 && cf.endminute.value != 0 ) )
 		{
-			alert("<%885%>");
+			alert("<%889%>");
 			return false;
 		}
 		else
@@ -309,13 +309,13 @@ function checkSchedule()
     	if (cf.starthour.value == cf.endhour.value &&
     	    cf.startminute.value == cf.endminute.value)
     	{
-    		alert("<%885%>");
+    		alert("<%889%>");
     		return false;
         }
 
         if (cf.starthour.value == 24 && cf.startminute.value == 0)
         {
-			alert("<%885%>");
+			alert("<%889%>");
 			return false;
 		}
 
@@ -325,7 +325,7 @@ function checkSchedule()
             if ((cf.starthour.value < 0) || (cf.starthour.value > 23) ||
                 (cf.startminute.value < 0) || (cf.startminute.value > 59))
             {
-                alert("<%885%>");
+                alert("<%889%>");
                 return false;
             }
 		}
@@ -335,7 +335,7 @@ function checkSchedule()
             (cf.startminute.value < 0) || (cf.startminute.value > 59) ||
             (cf.endminute.value < 0) || (cf.endminute.value > 59))
     	{
-    		alert("<%885%>");
+    		alert("<%889%>");
     		return false;
     	}
 
@@ -344,13 +344,13 @@ function checkSchedule()
     	    (!_isNumeric(cf.startminute.value)) ||
     	    (!_isNumeric(cf.endminute.value)))
     	{
-    		alert("<%885%>");
+    		alert("<%889%>");
     		return false;
     	}
 
     	if ((cf.starthour.value == '') || (cf.endhour.value == ''))
     	{
-    		alert("<%885%>");
+    		alert("<%889%>");
     		return false;
     	}
 
@@ -414,86 +414,86 @@ function chSession(newsession)
         </tr>
         <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
 		<tr>
-			<td colspan="2"><b><a href="javascript:loadhelp('FW_schedule','blocksch')" tabindex="-1"><%886%>:</a></b></td></tr>
+			<td colspan="2"><b><a href="javascript:loadhelp('FW_schedule','blocksch')" tabindex="-1"><%890%>:</a></b></td></tr>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameAll onclick=BlockAllClickCheck(); type=checkbox value=checkboxValue><%887%> </TD></TR>
+                <INPUT name=checkboxNameAll onclick=BlockAllClickCheck(); type=checkbox value=checkboxValue><%891%> </TD></TR>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameSun type=checkbox value=checkboxValue ><%787%></TD></TR>
+                <INPUT name=checkboxNameSun type=checkbox value=checkboxValue ><%791%></TD></TR>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameMon type=checkbox value=checkboxValue><%788%></TD></TR>
+                <INPUT name=checkboxNameMon type=checkbox value=checkboxValue><%792%></TD></TR>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameTue type=checkbox value=checkboxValue><%789%></TD></TR>
+                <INPUT name=checkboxNameTue type=checkbox value=checkboxValue><%793%></TD></TR>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameWed type=checkbox value=checkboxValue><%790%></TD></TR>
+                <INPUT name=checkboxNameWed type=checkbox value=checkboxValue><%794%></TD></TR>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameThu type=checkbox value=checkboxValue><%791%></TD></TR>
+                <INPUT name=checkboxNameThu type=checkbox value=checkboxValue><%795%></TD></TR>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameFri type=checkbox value=checkboxValue><%792%></TD></TR>
+                <INPUT name=checkboxNameFri type=checkbox value=checkboxValue><%796%></TD></TR>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNameSat type=checkbox value=checkboxValue><%793%></TD></TR>
+                <INPUT name=checkboxNameSat type=checkbox value=checkboxValue><%797%></TD></TR>
         <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
 		<tr>
-			<td colspan="2"><b><a href="javascript:loadhelp('FW_schedule','blocksch')" tabindex="-1"><%888%></a></b><%889%></td></tr>
+			<td colspan="2"><b><a href="javascript:loadhelp('FW_schedule','blocksch')" tabindex="-1"><%892%></a></b><%893%></td></tr>
         <TR>
             <TD colSpan=2 colspan="2" >
-                <INPUT name=checkboxNamehours onclick=BlockPeriodClick(this.form); type=checkbox value=checkboxValue> <%890%></TD></TR>
+                <INPUT name=checkboxNamehours onclick=BlockPeriodClick(this.form); type=checkbox value=checkboxValue> <%894%></TD></TR>
         <TR>
-            <TD width="50%"><%891%></TD>
+            <TD width="50%"><%895%></TD>
             <TD width="50%">
-                <INPUT class=num maxLength=2 name=starthour onfocus="if(TimePeriodDisabled) this.blur()" size=3><%892%>
-                <INPUT class=num maxLength=2 name=startminute onfocus="if(TimePeriodDisabled) this.blur()" size=3><%893%></TD></TR>
+                <INPUT class=num maxLength=2 name=starthour onfocus="if(TimePeriodDisabled) this.blur()" size=3><%896%>
+                <INPUT class=num maxLength=2 name=startminute onfocus="if(TimePeriodDisabled) this.blur()" size=3><%897%></TD></TR>
         <TR>
-            <TD width="50%"><%894%></TD>
+            <TD width="50%"><%898%></TD>
             <TD>
-                <INPUT class=num maxLength=2 name=endhour onfocus="if(TimePeriodDisabled) this.blur()" size=3><%892%>
-                <INPUT class=num maxLength=2 name=endminute onfocus="if(TimePeriodDisabled) this.blur()" size=3><%893%></TD></TR>
+                <INPUT class=num maxLength=2 name=endhour onfocus="if(TimePeriodDisabled) this.blur()" size=3><%896%>
+                <INPUT class=num maxLength=2 name=endminute onfocus="if(TimePeriodDisabled) this.blur()" size=3><%897%></TD></TR>
         <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
         <tr>
-            <td colspan="2"><a href="javascript:loadhelp('FW_schedule','timezone')" tabindex="-1"><b><%895%></b></a></td></tr>
+            <td colspan="2"><a href="javascript:loadhelp('FW_schedule','timezone')" tabindex="-1"><b><%899%></b></a></td></tr>
         <tr>
             <td colspan="2">
                 <SELECT name=time_zone size=1>
-                    <OPTION value=-12 <%896%>><%897%></OPTION>
-                    <OPTION value=-11 <%898%>><%899%></OPTION>
-                    <OPTION value=-10 <%900%>><%901%></OPTION>
-                    <OPTION value=-9 <%902%>><%903%></OPTION>
-                    <OPTION value=-8 <%904%>><%905%></OPTION>
-                    <OPTION value=-7 <%906%>><%907%></OPTION>
-                    <OPTION value=-6 <%908%>><%909%></OPTION>
-                    <OPTION value=-5 <%910%>><%911%></OPTION>
-                    <OPTION value=-4 <%912%>><%913%></OPTION>
-                    <OPTION value=-35 <%914%>><%915%></OPTION>
-                    <OPTION value=-3 <%916%>><%917%></OPTION>
-                    <OPTION value=-2 <%918%>><%919%></OPTION>
-                    <OPTION value=-1 <%920%>><%921%></OPTION>
-                    <OPTION value=0 <%922%>><%923%></OPTION>
-                    <OPTION value=1 <%924%>><%925%></OPTION>
-                    <OPTION value=2 <%926%>><%927%></OPTION>
-                    <OPTION value=3 <%928%>><%929%></OPTION>
-                    <OPTION value=4 <%930%>><%931%></OPTION>
-                    <OPTION value=5 <%932%>><%933%></OPTION>
-                    <OPTION value=55 <%934%>><%935%></OPTION>
-                    <OPTION value=6 <%936%>><%937%></OPTION>
-                    <OPTION value=7 <%938%>><%939%></OPTION>
-                    <OPTION value=8 <%940%>><%941%></OPTION>
-                    <OPTION value=9 <%942%>><%943%></OPTION>
-                    <OPTION value=10 <%944%>><%945%></OPTION>
-                    <OPTION value=11 <%946%>><%947%></OPTION>
-                    <OPTION value=12 <%948%>><%949%></OPTION>
-                    <OPTION value=13 <%950%>><%951%></OPTION></SELECT></td></tr>
+                    <OPTION value=-12 <%900%>><%901%></OPTION>
+                    <OPTION value=-11 <%902%>><%903%></OPTION>
+                    <OPTION value=-10 <%904%>><%905%></OPTION>
+                    <OPTION value=-9 <%906%>><%907%></OPTION>
+                    <OPTION value=-8 <%908%>><%909%></OPTION>
+                    <OPTION value=-7 <%910%>><%911%></OPTION>
+                    <OPTION value=-6 <%912%>><%913%></OPTION>
+                    <OPTION value=-5 <%914%>><%915%></OPTION>
+                    <OPTION value=-4 <%916%>><%917%></OPTION>
+                    <OPTION value=-35 <%918%>><%919%></OPTION>
+                    <OPTION value=-3 <%920%>><%921%></OPTION>
+                    <OPTION value=-2 <%922%>><%923%></OPTION>
+                    <OPTION value=-1 <%924%>><%925%></OPTION>
+                    <OPTION value=0 <%926%>><%927%></OPTION>
+                    <OPTION value=1 <%928%>><%929%></OPTION>
+                    <OPTION value=2 <%930%>><%931%></OPTION>
+                    <OPTION value=3 <%932%>><%933%></OPTION>
+                    <OPTION value=4 <%934%>><%935%></OPTION>
+                    <OPTION value=5 <%936%>><%937%></OPTION>
+                    <OPTION value=55 <%938%>><%939%></OPTION>
+                    <OPTION value=6 <%940%>><%941%></OPTION>
+                    <OPTION value=7 <%942%>><%943%></OPTION>
+                    <OPTION value=8 <%944%>><%945%></OPTION>
+                    <OPTION value=9 <%946%>><%947%></OPTION>
+                    <OPTION value=10 <%948%>><%949%></OPTION>
+                    <OPTION value=11 <%950%>><%951%></OPTION>
+                    <OPTION value=12 <%952%>><%953%></OPTION>
+                    <OPTION value=13 <%954%>><%955%></OPTION></SELECT></td></tr>
         <tr>
             <td colspan="2">
-                <input type="checkbox" name="adjust" value="adjust"><%952%></td></tr>
+                <input type="checkbox" name="adjust" value="adjust"><%956%></td></tr>
         <tr>
-            <td colspan="2" align="center"><BR><b><%846%>: &nbsp; <%953%></b><BR> &nbsp; </td></tr>
+            <td colspan="2" align="center"><BR><b><%850%>: &nbsp; <%957%></b><BR> &nbsp; </td></tr>
         <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
         
     </table></div></td></tr>
@@ -510,13 +510,13 @@ function chSession(newsession)
 
 
 
-    <INPUT name=schedule_day type=hidden value= "<%954%>">
+    <INPUT name=schedule_day type=hidden value= "<%958%>">
     <INPUT name=schedule_alldayenable type=hidden>
-    <INPUT name=schedule_starthour type=hidden value= "<%955%>">
-    <INPUT name=schedule_startminute type=hidden value= "<%956%>">
-    <INPUT name=schedule_endhour type=hidden value= "<%957%>">
-    <INPUT name=schedule_endminute type=hidden value= "<%958%>">
-    <INPUT name=schedule_daylightadjust type=hidden value= "<%959%>">
+    <INPUT name=schedule_starthour type=hidden value= "<%959%>">
+    <INPUT name=schedule_startminute type=hidden value= "<%960%>">
+    <INPUT name=schedule_endhour type=hidden value= "<%961%>">
+    <INPUT name=schedule_endminute type=hidden value= "<%962%>">
+    <INPUT name=schedule_daylightadjust type=hidden value= "<%963%>">
     <INPUT name=result type=hidden value= "apply">
     <INPUT type="hidden" name="enable_apmode" value="<%384%>">
 <a name="helpframe-anchor"></a>

@@ -149,14 +149,14 @@ function checkData()
         var tmp=cf.email_smtp.value.split(".");
         if(tmp.length < 3)
         {
-            alert("<%767%>");
+            alert("<%771%>");
             cf.email_smtp.focus();
             return false;
         }
         if(cf.email_addr.value.indexOf("@", 0) == -1 ||
            cf.email_addr.value.indexOf(".", 0) == -1)
         {
-            alert("<%768%>");
+            alert("<%772%>");
             cf.email_addr.focus();
             return false;
         }
@@ -398,63 +398,63 @@ function setAuthGray()
     
     <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
     <tr>
-        <td colspan="2"><input type="checkbox" name="email_notify" value="checkboxValue" onclick = "javascript:setGray();"><b><%769%></b></td></tr>
+        <td colspan="2"><input type="checkbox" name="email_notify" value="checkboxValue" onclick = "javascript:setGray();"><b><%773%></b></td></tr>
     <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
     <tr>
-        <td colspan="2"><a href="javascript:loadhelp('FW_email','receive')" tabindex="-1"><b><%770%></b> </a></td></tr>
+        <td colspan="2"><a href="javascript:loadhelp('FW_email','receive')" tabindex="-1"><b><%774%></b> </a></td></tr>
     <tr>
-        <td nowrap><%771%></td>
+        <td nowrap><%775%></td>
         <td width="50%" align="right">
-            <input type="text" name="email_smtp" value="<%772%>" size="24" maxlength="50"></td></tr>
+            <input type="text" name="email_smtp" value="<%776%>" size="24" maxlength="50"></td></tr>
     <tr>
-        <td nowrap><%773%></td>
+        <td nowrap><%777%></td>
         <td width="50%" align="right">
-            <input type="text" name="email_addr" value="<%774%>" size="24" maxlength="50"></td></tr>
+            <input type="text" name="email_addr" value="<%778%>" size="24" maxlength="50"></td></tr>
      <tr>
         <td nowrap>Outgoing Mail Server Port Number</td>
         <td width="50%" align="right">
-            <input type="text" name="smtp_port" value="<%775%>" size="4" maxlength="50"></td></tr>
+            <input type="text" name="smtp_port" value="<%779%>" size="4" maxlength="50"></td></tr>
 
     <tr>
         <td colSpan=2 colspan="2" ><input type="checkbox" name="smtp_auth" onclick = "javascript:setAuthGray();">
-        <B><%776%></B></td></tr>    
+        <B><%780%></B></td></tr>    
     <tr>
         <td><%478%></td>
         <td align=right width="50%"><INPUT maxLength=64 name=auth_user size=24
-        value= "<%777%>"> </td></tr>
+        value= "<%781%>"> </td></tr>
     <tr>
         <td><%492%></td>
         <td align=right width="50%"><INPUT type=password maxLength=64 name=auth_pwd size=24
-        value= "<%778%>"> </td></tr>
+        value= "<%782%>"> </td></tr>
     
     <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
     <tr>
-        <td colspan="2"><a href="javascript:loadhelp('FW_email','alert')" tabindex="-1"><input type="checkbox"  name="block_site" value="checkboxValue"><b><%779%></b></a></td></tr>
+        <td colspan="2"><a href="javascript:loadhelp('FW_email','alert')" tabindex="-1"><input type="checkbox"  name="block_site" value="checkboxValue"><b><%783%></b></a></td></tr>
     <tr>
-        <td colspan="2" nowrap><%780%></td></tr>
+        <td colspan="2" nowrap><%784%></td></tr>
     <tr><td colspan="2" height="12" ><div style="background-image:url('liteblue.gif');width:100%">&nbsp;</div></td></tr>
     <tr>
-	    <td colspan="2" nowrap><a href="javascript:loadhelp('FW_email','schedule')" tabindex="-1"><b><%781%></b></a></td></tr>
+	    <td colspan="2" nowrap><a href="javascript:loadhelp('FW_email','schedule')" tabindex="-1"><b><%785%></b></a></td></tr>
     <tr>
 	    <td colspan="2">
 	        <select name="cfAlert_Select" size="1" onchange="OnAlertChange();">
-	            <option selected value=1><%782%></option>
-	            <option value=2><%783%></option>
-	            <option value=3><%784%></option>
-	            <option value=4><%785%></option>
+	            <option selected value=1><%786%></option>
+	            <option value=2><%787%></option>
+	            <option value=3><%788%></option>
+	            <option value=4><%789%></option>
 	            <option value=0><%139%></option></select></td></tr>
     <tr>
-	    <td colspan="2"><%786%> &nbsp;
+	    <td colspan="2"><%790%> &nbsp;
 	        <select name="cfAlert_Day" size="1" onFocus="if (AlertTimeDisabled) this.blur()">
-	            <option selected value=0><%787%></option>
-	            <option value=1><%788%></option>
-	            <option value=2><%789%></option>
-	            <option value=3><%790%></option>
-	            <option value=4><%791%></option>
-	            <option value=5><%792%></option>
-	            <option value=6><%793%></option></select></td></tr>
+	            <option selected value=0><%791%></option>
+	            <option value=1><%792%></option>
+	            <option value=2><%793%></option>
+	            <option value=3><%794%></option>
+	            <option value=4><%795%></option>
+	            <option value=5><%796%></option>
+	            <option value=6><%797%></option></select></td></tr>
     <tr>
-	    <td colspan="2"><%794%>
+	    <td colspan="2"><%798%>
 		    <select name="cfAlert_Hour" size="1" onFocus="if (AlertHourDisabled) this.blur()">
 		        <option value=0>12:00</option>
 		        <option selected value=1>1:00</option>
@@ -486,13 +486,13 @@ function setAuthGray()
 
 
 
-<INPUT name=email_enable type=hidden value= "<%795%>">
-<INPUT name=email_alert type=hidden value= "<%796%>">
-<INPUT name=auth_enable type=hidden value= "<%797%>">
-<INPUT name=smtp_check type=hidden value= "<%798%>">
-<INPUT name=time_type type=hidden value= "<%799%>">
-<INPUT name=time_day type=hidden value= "<%800%>">
-<INPUT name=time_hour type=hidden value= "<%801%>">
+<INPUT name=email_enable type=hidden value= "<%799%>">
+<INPUT name=email_alert type=hidden value= "<%800%>">
+<INPUT name=auth_enable type=hidden value= "<%801%>">
+<INPUT name=smtp_check type=hidden value= "<%802%>">
+<INPUT name=time_type type=hidden value= "<%803%>">
+<INPUT name=time_day type=hidden value= "<%804%>">
+<INPUT name=time_hour type=hidden value= "<%805%>">
 <INPUT name=result type=hidden value= "apply">
 <a name="helpframe-anchor"></a>
 </form>

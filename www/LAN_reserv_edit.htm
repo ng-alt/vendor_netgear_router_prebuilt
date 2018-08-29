@@ -108,8 +108,8 @@ function checkData()
 	var rv_dv_name=cf.reserved_devname.value.split("|");
 	var i, conflict, reply;
 
-	var str_dhcp_start = "<%986%>";
-	var str_dhcp_end = "<%987%>"
+	var str_dhcp_start = "<%990%>";
+	var str_dhcp_end = "<%991%>"
 	var dhcp_startaddr = str_dhcp_start.split(".");
 	var dhcp_endaddr = str_dhcp_end.split(".");
 
@@ -121,7 +121,7 @@ function checkData()
 		msg+= "<%0%>\n";
 	msg+= checkBlank(cf.dv_name, "<%639%>");
 	if (cf.dv_name.value.match( /[^\x20-\x7E]/ ))
-		msg+="<%962%>\n";
+		msg+="<%966%>\n";
 	if (msg.length > 1)
 	{
 		alert(msg);
@@ -146,7 +146,7 @@ function checkData()
         i++;
     }
     if (conflict) {
-        reply = confirm("<%996%>");
+        reply = confirm("<%1000%>");
         if (!reply)
             return false;
     }
@@ -165,7 +165,7 @@ function loadSettings()
 	cf.rsv_ip3.value = rsv_ip[2];
 	cf.rsv_ip4.value = rsv_ip[3];
 
-	cf.rsv_mac.value = "<%1002%>";
+	cf.rsv_mac.value = "<%1006%>";
     cf.orig_rsv_mac.value = cf.rsv_mac.value;
     cf.dv_name.value = cf.orig_dv_name.value;
 }
@@ -181,7 +181,7 @@ function loadSettings()
 <form id="target"  method="POST" action="reserv.cgi">
 <input type="hidden" name="buttonHit"><input type="hidden" name="buttonValue">
 	<img class="subtop-image" src="<%62%>">
-<div class="subhead2"> <%980%></div>
+<div class="subhead2"> <%984%></div>
 <table border="0"    style="height:370px"  class="subhead2-table">
 
 <tr align="left" valign="middle">
@@ -228,14 +228,14 @@ function loadSettings()
 
 
 
-<INPUT name=rsv_ip type=hidden value= "<%1003%>">
+<INPUT name=rsv_ip type=hidden value= "<%1007%>">
 <INPUT name=rsv_mode type=hidden value="edit">
-<input type="hidden" name="reserved_ips" value="<%999%>">
-<input type="hidden" name="reserved_macs" value="<%1000%>">
-<input type="hidden" name="reserved_devname" value="<%1001%>">
+<input type="hidden" name="reserved_ips" value="<%1003%>">
+<input type="hidden" name="reserved_macs" value="<%1004%>">
+<input type="hidden" name="reserved_devname" value="<%1005%>">
 <input type="hidden" name="orig_rsv_ip" value="">
 <input type="hidden" name="orig_rsv_mac" value="">
-<input type="hidden" name="orig_dv_name" value="<%1004%>">
+<input type="hidden" name="orig_dv_name" value="<%1008%>">
 <a name="helpframe-anchor"></a>
 </form>
 </div>
